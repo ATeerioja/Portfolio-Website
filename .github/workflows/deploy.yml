@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      # 1.5 Check for leaked secrets
+      # 1.5 Check for leaked secrets in the current commit
       - name: Secret Scanning
         uses: trufflesecurity/trufflehog@main
         with:
