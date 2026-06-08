@@ -7,14 +7,14 @@
 window.PORTFOLIO_CONFIG = {
 
   // --- Identity ---
-  name: "Your Name",
-  title: "CS Student & Developer",
+  name: "Anton Teerioja",
+  title: "Data-analytics Master's Student and Machine Learning Enthusiast",
   university: "University of Turku",
   location: "Turku, Finland",
 
   // --- GitHub ---
   // Your GitHub username — projects section will fetch your repos automatically
-  githubUsername: "your-github-username",
+  githubUsername: "ATeerioja",
 
   // Repos to pin/highlight at the top (by repo name). Leave empty [] to show all.
   pinnedRepos: [],
@@ -25,15 +25,15 @@ window.PORTFOLIO_CONFIG = {
   // --- About ---
   // Short bio paragraphs shown in the About section
   bio: [
-    "I'm a computer science student passionate about building things that matter.",
-    "Currently exploring full-stack development, distributed systems, and anything that runs in a terminal.",
+    "Currently studying for my Master's in data-analytics.",
+    "Currently exploring Machine learning applications in real world situations.",
   ],
 
   // Tags shown as skill chips
   skills: ["Python", "JavaScript", "C", "Linux", "Git", "Docker"],
 
   // --- Contact ---
-  email: "you@example.com",
-  github: "https://github.com/your-github-username",
-  linkedin: "",   // leave empty to hide
+  email: "anton.teerioja@gmail.com",
+  github: "https://github.com/ATeerioja",
+  linkedin: "https://www.linkedin.com/in/anton-teerioja-485846229/",   // leave empty to hide
 };
