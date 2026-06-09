@@ -1,3 +1,8 @@
+# Commits and branches
+
+fix/ feat/ chore/
+{fix or feat or chore}: {version number} - {changes}
+
 # Development workflows
 npm run dev          # Vite dev server — hot reload, instant feedback
 docker compose up    # Tests the production build exactly as it'll ship
@@ -9,3 +14,4 @@ Always check what version to use and update if necessary.
 ## V2
 Updated nvm, npm and Node. Manually changed the package.json versions to current ones.
 After these updates works as wanted.
+
