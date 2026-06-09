@@ -34,7 +34,7 @@ export default function App() {
       <nav className={`nav${scrolled ? ' nav--scrolled' : ''}`}>
         <span className="nav-logo">~/portfolio</span>
         <ul className="nav-links">
-          {['hero', 'about', 'projects', 'contact', 'blog'].map(id => (
+          {['hero', 'about', 'projects', 'blog', 'contact'].map(id => (
             <li key={id}>
               <button onClick={() => scrollTo(id)} className="nav-btn">
                 {id}

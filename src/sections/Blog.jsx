@@ -1,18 +1,25 @@
-/**
- * sections/Blog.jsx
- * Props: config
- */
 export default function Blog({ config }) {
-
   return (
     <div className="section-inner">
       <p className="section-label">// blog</p>
-      <h2 className="contact-heading">Recent thoughts on this website.</h2>
-      <p className="blog-text">
-        Working on this website has really helped me with working with websites for the first time in over a year. 
-        I have forgotten many things especially about React, but I believe that this project helps me with creating and delivering
-        interesting projects for my main interest which is data-analytics and machine learning.
-      </p>
+      <h2 className="about-heading">writing.</h2>
+      <div className="blog-list">
+        {config.blogPosts.map(post => (
+          <a
+            key={post.slug}
+            className="blog-card"
+            href={post.url}
+            {...(post.url.startsWith('http') && {
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            })}
+          >
+            <span className="blog-date">{post.date}</span>
+            <span className="blog-title">{post.title}</span>
+            <span className="blog-arrow">→</span>
+          </a>
+        ))}
+      </div>
     </div>
   )
 }

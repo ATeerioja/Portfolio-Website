@@ -33,6 +33,22 @@ const config = {
   email: "anton.teerioja@gmail.com",
   github: "https://github.com/ATeerioja",
   linkedin: "https://www.linkedin.com/in/anton-teerioja-485846229/",   // leave empty to hide
+
+  blogPosts: [
+    {
+      slug:  'v1-thoughts',
+      title: 'What I learned working with Claude',
+      date:  '2025-06-09',
+      url:   '/blog/v1-thoughts',   // or a full URL if hosted elsewhere
+    },
+    {
+      slug:  'v2-thoughts',
+      title: 'Migrating vanilla JS to React with Claude',
+      date:  '2025-06-09',
+      url:   '/blog/v2-thoughts',
+    },
+  ],
+
 };
 
 export default config;
