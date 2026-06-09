@@ -8,7 +8,7 @@
 # =============================================================
 
 # ---- Stage 1: Build ----
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 
 WORKDIR /app
 
@@ -23,7 +23,7 @@ RUN npm run build
 # Output is in /app/dist
 
 # ---- Stage 2: Serve ----
-FROM nginx:1.27-alpine
+FROM nginx:1.31.1-alpine
 
 # Remove default Nginx content
 RUN rm -rf /usr/share/nginx/html/*
