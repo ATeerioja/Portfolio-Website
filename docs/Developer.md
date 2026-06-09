@@ -19,3 +19,8 @@ Always check what version to use and update if necessary.
 Updated nvm, npm and Node. Manually changed the package.json versions to current ones.
 After these updates works as wanted.
 
+Migration is now completed and added a blog section.
+
+## V3
+For version 3 create the working blog feature.
+
