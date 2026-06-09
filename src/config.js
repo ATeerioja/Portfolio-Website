@@ -10,13 +10,13 @@
 
 const config = {
   // --- Identity ---
-  name: "Your Name",
-  title: "CS Student & Developer",
+  name: "Anton Teerioja",
+  title: "Data-analytics Master's Student and Machine Learning Enthusiast",
   university: "University of Turku",
   location: "Turku, Finland",
 
   // --- GitHub ---
-  githubUsername: "your-github-username",
+  githubUsername: "ATeerioja",
   // Repos to show first (by name). Leave [] to sort by recently updated.
   pinnedRepos: [],
   // Max repos to display
@@ -24,15 +24,15 @@ const config = {
 
   // --- About ---
   bio: [
-    "I'm a computer science student passionate about building things that matter.",
-    "Currently exploring full-stack development, distributed systems, and anything that runs in a terminal.",
+    "Currently studying for my Master's in data-analytics.",
+    "Currently exploring Machine learning applications in real world situations.",
   ],
-  skills: ["Python", "JavaScript", "React", "C", "Linux", "Git", "Docker"],
+  skills: ["Python", "JavaScript", "C", "Linux", "Git", "Docker"],
 
   // --- Contact ---
-  email: "you@example.com",
-  github: "https://github.com/your-github-username",
-  linkedin: "", // leave empty to hide the link
+  email: "anton.teerioja@gmail.com",
+  github: "https://github.com/ATeerioja",
+  linkedin: "https://www.linkedin.com/in/anton-teerioja-485846229/",   // leave empty to hide
 };
 
 export default config;

@@ -13,6 +13,7 @@ import Hero    from './sections/Hero.jsx'
 import About   from './sections/About.jsx'
 import Projects from './sections/Projects.jsx'
 import Contact from './sections/Contact.jsx'
+import Blog from './sections/Contact.jsx'
 import config  from './config.js'
 
 export default function App() {
@@ -33,7 +34,7 @@ export default function App() {
       <nav className={`nav${scrolled ? ' nav--scrolled' : ''}`}>
         <span className="nav-logo">~/portfolio</span>
         <ul className="nav-links">
-          {['hero', 'about', 'projects', 'contact'].map(id => (
+          {['hero', 'about', 'projects', 'contact', 'blog'].map(id => (
             <li key={id}>
               <button onClick={() => scrollTo(id)} className="nav-btn">
                 {id}
@@ -48,6 +49,7 @@ export default function App() {
         <section id="about"><About config={config} /></section>
         <section id="projects"><Projects config={config} /></section>
         <section id="contact"><Contact config={config} /></section>
+        <section id="blog"><Blog config={config} /></section>
       </main>
 
       <footer className="footer">

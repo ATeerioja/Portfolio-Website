@@ -3,9 +3,13 @@
 fix/ feat/ chore/
 {fix or feat or chore}: {version number} - {changes}
 
-# Development workflows
-npm run dev          # Vite dev server — hot reload, instant feedback
-docker compose up    # Tests the production build exactly as it'll ship
+# Commands
+npm run dev                 # Vite dev server, HMR at http://localhost:5173
+npm run build               # Production build → dist/
+npm run preview             # Preview prod build locally
+
+docker compose up --build   # Build + run container
+docker compose down         # Stop
 
 # Important notes
 Claude tends to use legacy packages and old versions of builds.
