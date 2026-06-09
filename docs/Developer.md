@@ -1,7 +1,11 @@
 # Commits and branches
-
 fix/ feat/ chore/
 {fix or feat or chore}: {version number} - {changes}
+
+git checkout -b feat/{version number}-{feature}
+git checkout main
+git merge {branch name}
+git tag {version number}
 
 # Commands
 npm run dev                 # Vite dev server, HMR at http://localhost:5173
@@ -23,4 +27,3 @@ Migration is now completed and added a blog section.
 
 ## V3
 For version 3 create the working blog feature.
-
