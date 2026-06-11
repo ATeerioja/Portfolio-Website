@@ -48,12 +48,13 @@ export default function App() {
         <section id="hero"><Hero config={config} /></section>
         <section id="about"><About config={config} /></section>
         <section id="projects"><Projects config={config} /></section>
-        <section id="contact"><Contact config={config} /></section>
         <section id="blog"><Blog config={config} /></section>
+        <section id="contact"><Contact config={config} /></section>
+
       </main>
 
       <footer className="footer">
-        <span>built with curiosity &amp; caffeine</span>
+        <span>built with curiosity</span>
         <span>{new Date().getFullYear()}</span>
       </footer>
     </>
