@@ -48,3 +48,10 @@ A complete list of commands used in this project.
 ```
 {fix|feat|chore}: {version} - {changes}
 ```
+
+### Remove local branches
+
+```
+git fetch --prune
+git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D
+```
