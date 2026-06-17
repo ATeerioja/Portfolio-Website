@@ -3,11 +3,18 @@
  * Single post view. Renders the pre-parsed HTML from the markdown file.
  * Props: slug
  */
+import { useLayoutEffect } from 'react'
 import { getPost } from '../posts/loadPosts.js'
 import { navigate } from '../hooks/useHashRoute.js'
 
 export default function BlogPost({ slug }) {
   const post = getPost(slug)
+
+  // Jump to the top of the post before the browser paints — runs after the
+  // post DOM is committed, so the home page / Hero never flashes.
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [slug])
 
   if (!post) {
     return (

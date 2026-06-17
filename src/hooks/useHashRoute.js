@@ -34,7 +34,9 @@ export function useHashRoute() {
 export function navigate(slug, scrollToId) {
   if (slug) {
     window.location.hash = `#/blog/${encodeURIComponent(slug)}`
-    window.scrollTo({ top: 0, behavior: 'instant' })
+    // Scroll-to-top is handled by BlogPost's layout effect once it mounts.
+    // Scrolling here would scroll the still-mounted home page up to the Hero,
+    // which the browser paints for one frame before the route swaps.
   } else {
     window.location.hash = '#'
     if (scrollToId) {
