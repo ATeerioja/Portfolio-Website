@@ -9,12 +9,13 @@ git checkout main
 git merge {branch name}
 git tag {version number}
 
-## Commands
-npm run dev                 # Vite dev server, HMR at http://localhost:5173
+## Build
 npm run build               # Production build → dist/
-npm run preview             # Preview prod build locally
+docker compose up --build   # Build + run container to test
 
-docker compose up --build   # Build + run container
+## Dev
+npm run dev                 # Vite dev server, HMR at http://localhost:5173
+npm run preview             # Preview prod build locally
 docker compose down         # Stop
 
 # Versions
