@@ -5,7 +5,7 @@ const config = {
   university: "University of Turku",
   location: "Turku, Finland",
   githubUsername: "ATeerioja",
-  pinnedRepos: ["Portfolio", "Smile_Detection", "Leaf_Classification_Problem", "Tree_Feature_Engineering", "Portable_Arduino_Speaker", "Advent_Of_Code_24"],
+  pinnedRepos: ["Portfolio-Website", "Smile-Detection", "Portable-Arduino-Speaker", "Advent-Of-Code-24", "Junction-24"],
   maxRepos: 6,
   bio: [
     "Currently studying for my Master's in data-analytics.",

@@ -53,5 +53,5 @@ A complete list of commands used in this project.
 
 ```
 git fetch --prune
-git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D
+git branch -vv | grep 'gone' | awk '{print $1}' | xargs git branch -D
 ```
