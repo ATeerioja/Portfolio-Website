@@ -40,3 +40,10 @@ Migration is now completed and added a blog section.
 
 ## V2.3.0
 - Add a CV-section that is formatted as a one page ready-to-print and professional looking.
+
+## V2.4.0
+- Harden security headers in nginx/default.conf: add Content-Security-Policy,
+  Strict-Transport-Security (HSTS), and server_tokens off.
+- Sanitize rendered Markdown with isomorphic-dompurify in loadPosts.js to close
+  a latent XSS surface in the blog.
+- Align Cloudflare setup: proxy AAAA record, Full (Strict) SSL, Always Use HTTPS.

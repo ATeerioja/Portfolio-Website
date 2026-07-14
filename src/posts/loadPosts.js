@@ -23,6 +23,7 @@
  * so the post lives at /blog/my-post.
  */
 import { marked } from 'marked'
+import DOMPurify from 'isomorphic-dompurify'
 
 // eager: true inlines the raw file contents at build time.
 // `query: '?raw'` + `import: 'default'` gives us the file as a string.
@@ -72,7 +73,7 @@ const posts = Object.entries(files)
       date: attributes.date || '',
       summary: attributes.summary || '',
       draft: attributes.draft === true,
-      html: marked.parse(body),
+      html: DOMPurify.sanitize(marked.parse(body)),
     }
   })
   .filter(post => !post.draft)
